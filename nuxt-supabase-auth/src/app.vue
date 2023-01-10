@@ -25,6 +25,11 @@ const user = useSupabaseUser()
               <span class="self-center text-l font-semibold text-white">Register</span>
             </NuxtLink>
           </li>
+          <li>
+            <NuxtLink to="/magiclink">
+              <span class="self-center text-l font-semibold text-white">MagicLink</span>
+            </NuxtLink>
+          </li>
         </template>
         <li v-else>
           <NuxtLink to="/protected">

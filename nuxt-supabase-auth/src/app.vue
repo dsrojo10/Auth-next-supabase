@@ -3,25 +3,36 @@ const user = useSupabaseUser()
 </script>
 
 <template>
-  <div>
-    <nav>
+  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a>
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Podcast Wundercomm</span>
+      </a>
       <ul>
         <li>
-          <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/">
+            <span class="self-center text-l font-semibold text-white">Home</span>
+          </NuxtLink>
         </li>
         <template v-if="!user">
           <li>
-            <NuxtLink to="/login">Login</NuxtLink>
+            <NuxtLink to="/login">
+            <span class="self-center text-l font-semibold text-white">Login</span>
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/register">Register</NuxtLink>
+            <NuxtLink to="/register">
+              <span class="self-center text-l font-semibold text-white">Register</span>
+            </NuxtLink>
           </li>
         </template>
         <li v-else>
-          <NuxtLink to="/protected">Protected</NuxtLink>
+          <NuxtLink to="/protected">
+            <span class="self-center text-l font-semibold text-white">Protected</span>
+          </NuxtLink>
         </li>
       </ul>
-    </nav>
-    <NuxtPage/>
-  </div>
+    </div>
+  </nav>
+  <NuxtPage/>
 </template>

@@ -24,7 +24,7 @@ const register_ml = async () => {
 
 <template>
     <div>
-        <h1 class="text-xl">MagicLink</h1>
+        <h1 class="mt-6 text-3xl font-extrabold text-gray-900">MagicLink</h1>
         <p class="description">Sign in via magic link with your email below</p>
         <div class="w-full max-w-xs">
             <form @submit.prevent="register_ml" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">

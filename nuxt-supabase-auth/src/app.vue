@@ -8,24 +8,24 @@ const user = useSupabaseUser()
       <a>
         <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Podcast Wundercomm</span>
       </a>
-      <ul>
-        <li>
+      <ul class="flex">
+        <li class="mr-6">
           <NuxtLink to="/">
             <span class="self-center text-l font-semibold text-white">Home</span>
           </NuxtLink>
         </li>
         <template v-if="!user">
-          <li>
+          <li class="mr-6">
             <NuxtLink to="/login">
             <span class="self-center text-l font-semibold text-white">Login</span>
             </NuxtLink>
           </li>
-          <li>
+          <li class="mr-6">
             <NuxtLink to="/register">
               <span class="self-center text-l font-semibold text-white">Register</span>
             </NuxtLink>
           </li>
-          <li>
+          <li class="mr-6">
             <NuxtLink to="/magiclink">
               <span class="self-center text-l font-semibold text-white">MagicLink</span>
             </NuxtLink>

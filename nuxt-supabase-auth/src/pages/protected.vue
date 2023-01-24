@@ -16,8 +16,8 @@ const logout = async () => {
 </script>
 
 <template>
-    <div>
+    <div class="container ml-12">
         <h1 class="mt-6 text-3xl font-extrabold text-gray-900">Protected Page</h1>
-        <button @click="logout" class="dark:bg-gray-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Logout</button>
+        <button @click="logout" class="dark:bg-gray-900 hover:bg-blue-700 text-white absolute font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Logout</button>
     </div>
 </template>

@@ -23,7 +23,7 @@ const login = async () => {
 </script>
 
 <template>
-    <div>
+    <div class="ml-12">
         <h1 class="mt-6 text-3xl font-extrabold text-gray-900">Login Page</h1>
         <div class="w-full max-w-xs">
             <form @submit.prevent="login" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
@@ -40,6 +40,9 @@ const login = async () => {
                     <input v-model="credentials.password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="**********">
                 </div>
                 <button type="submit" class="dark:bg-gray-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+                <NuxtLink to="/register">
+                    <button class="dark:bg-gray-900 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 rounded focus:outline-none focus:shadow-outline">Register</button>
+                </NuxtLink>
             </form>
         </div>
     </div>

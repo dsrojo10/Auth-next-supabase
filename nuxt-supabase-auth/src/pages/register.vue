@@ -22,7 +22,7 @@ const register = async () => {
 </script>
 
 <template>
-    <div>
+    <div class="container ml-12">
         <h1 class="mt-6 text-3xl font-extrabold text-gray-900">Register Page</h1>
         <div class="w-full max-w-xs">
             <form @submit.prevent="register" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">

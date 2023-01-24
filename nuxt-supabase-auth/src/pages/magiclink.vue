@@ -23,7 +23,7 @@ const register_ml = async () => {
 </script>
 
 <template>
-    <div>
+    <div class="ml-12">
         <h1 class="mt-6 text-3xl font-extrabold text-gray-900">MagicLink</h1>
         <p class="description">Sign in via magic link with your email below</p>
         <div class="w-full max-w-xs">

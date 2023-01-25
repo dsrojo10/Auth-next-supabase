@@ -4,7 +4,15 @@ const user = useSupabaseUser()
 
 <template>
   <div class="w-1/10 h-screen fixed left-0 top-0 bg-gray-800">
-    <div class="flex flex-col h-full justify-items-center justify-center">
+    <div class="flex flex-col h-full justify-items-center">
+      <NuxtLink to="https://wundercomm.com/">
+        <button class="px-2 py-1 text-white bg-gray-700 mb-40 mt-1">
+          <span class="self-center text-l font-semibold text-white">
+            <!-- <img src="@/static/logo_speak.webp" alt="Logo" width="20" height="30"> -->
+            <img src="@/static/logo_mark.svg" alt="Logo" width="30" height="40">
+          </span>
+        </button>
+      </NuxtLink>
       <NuxtLink to="/">
         <button class="px-2 py-1 text-white bg-gray-700 mb-2">
           <span class="self-center text-l font-semibold text-white">
@@ -33,13 +41,13 @@ const user = useSupabaseUser()
           </button>
         </NuxtLink>
         </template>
-        <button class="px-2 py-1 text-white bg-gray-700 mb-2" v-else>
-          <NuxtLink to="/protected">
+        <NuxtLink to="/protected" v-else>
+        <button class="px-2 py-1 text-white bg-gray-700 mb-2">
             <span class="self-center text-l font-semibold text-white">
               <Icon class="text-xl" name="mdi:lock" />
             </span>
-          </NuxtLink>
-        </button>
+          </button>
+        </NuxtLink>
 
 
 

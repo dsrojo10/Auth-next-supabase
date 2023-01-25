@@ -3,3 +3,4 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/supabase', '@nuxtjs/tailwindcss', 'nuxt-icon'],
     srcDir: 'src'
 })
+
